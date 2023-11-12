@@ -20,10 +20,9 @@ export default function RootLayout() {
   if (!fontsLoaded) {
     return null;
   }
-
   return (
     <AuthProvider>
-      <Stack>
+      <Stack screenOptions={{ headerShown: false }}>
         <Stack.Screen
           name="(tabs)"
           options={{
